@@ -2,7 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+You should start by installing both Next and Sanity's dependancies with this command:
+
+```bash
+yarn install && yarn studio:install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,25 +16,13 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## This Starter Has Opinions
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Important env vars to set in a `.env.local` file before starting:
+  - `NEXT_PUBLIC_SANITY_DATASET`
+  - `NEXT_PUBLIC_SANITY_PROJECT_ID`
+- Be sure to read my notes in the README.md in the studio directory for instructions on hooking up your sanity studio instance
+- There are explicit paths defined in `jsconfig.json`
+- Customizing the Chakra theme should be done in `./src/theme`
+- This starter relies on [next-sanity](https://github.com/sanity-io/next-sanity). You can find the configured library in `/src/lib/sanity`
+  - This also means you shuold be well versed in [GROQ](https://www.sanity.io/docs/overview-groq). You are able to deploy a GraphQL endpoint for your studio and use your library of choice to fetch for that data, but for a more robust and frictionless experience, rock with GROQ.
