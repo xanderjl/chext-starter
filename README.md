@@ -25,4 +25,4 @@ yarn dev
 - There are explicit paths defined in `jsconfig.json`
 - Customizing the Chakra theme should be done in `./src/theme`
 - This starter relies on [next-sanity](https://github.com/sanity-io/next-sanity). You can find the configured library in `/src/lib/sanity`
-  - This also means you shuold be well versed in [GROQ](https://www.sanity.io/docs/overview-groq). You are able to deploy a GraphQL endpoint for your studio and use your library of choice to fetch for that data, but for a more robust and frictionless experience, rock with GROQ.
+  - This also means you should be well versed in [GROQ](https://www.sanity.io/docs/overview-groq). You are able to deploy a GraphQL endpoint for your studio and use your library of choice to fetch for that data, but for a more robust and frictionless experience, rock with GROQ.
