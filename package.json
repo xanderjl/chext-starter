@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "studio:init": "cd ./studio && sanity init",
     "studio:install": "cd ./studio && yarn install",
     "studio:start": "cd ./studio && sanity start",
     "studio:build": "cd ./studio && sanity build ../public/studio -y && cd ..",
