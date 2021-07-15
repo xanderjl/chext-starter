@@ -5,8 +5,8 @@
     "basePath": "/studio"
   },
   "api": {
-    "projectId": "YOUR_PROJECT_ID_HERE",
-    "dataset": "YOUR_DATASET_HERE"
+    "projectId": "",
+    "dataset": ""
   },
   "plugins": [
     "@sanity/base",
@@ -17,9 +17,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [
