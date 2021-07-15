@@ -1,4 +1,4 @@
-import { Link as NLink } from "next/link"
+import NLink from "next/link"
 import { Link as ChLink } from "@chakra-ui/react"
 
 const Link = ({ href, children, ...rest }) => {
