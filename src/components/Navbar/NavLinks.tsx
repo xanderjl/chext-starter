@@ -1,9 +1,14 @@
-import { Box, Stack } from "@chakra-ui/react"
+import { Box, Stack, StackProps } from "@chakra-ui/react"
 import Link from "@components/Link"
 
 import routes from "@util/routes.json"
+import { VFC } from "react"
 
-const NavLinks = ({ isOpen }) => {
+interface NavLinksProps extends StackProps {
+  isOpen?: boolean
+}
+
+const NavLinks: VFC<NavLinksProps> = ({ isOpen }) => {
   return (
     <Stack
       as="ul"
