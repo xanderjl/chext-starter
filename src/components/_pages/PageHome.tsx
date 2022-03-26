@@ -1,8 +1,8 @@
 import { Container, Heading } from "@chakra-ui/react"
-import Layout from "@components/Layout"
-import React, { VFC } from "react"
+import Layout from "components/Layout"
+import { VFC } from "react"
 
-const PageHome: VFC = () => {
+export const PageHome: VFC = () => {
   return (
     <Layout>
       <Container maxW="container.lg" px={5}>
@@ -11,5 +11,3 @@ const PageHome: VFC = () => {
     </Layout>
   )
 }
-
-export default PageHome

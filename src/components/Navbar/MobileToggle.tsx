@@ -3,12 +3,12 @@ import { VFC } from "react"
 import { AiOutlineMenu } from "react-icons/ai"
 import { MdClose } from "react-icons/md"
 
-interface MobileToggleProps extends BoxProps {
+export interface MobileToggleProps extends BoxProps {
   isOpen?: boolean
   onClick?: () => void
 }
 
-const MobileToggle: VFC<MobileToggleProps> = ({ isOpen, onClick }) => {
+export const MobileToggle: VFC<MobileToggleProps> = ({ isOpen, onClick }) => {
   return (
     <Box
       as={isOpen ? AiOutlineMenu : MdClose}
@@ -18,5 +18,3 @@ const MobileToggle: VFC<MobileToggleProps> = ({ isOpen, onClick }) => {
     />
   )
 }
-
-export default MobileToggle

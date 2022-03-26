@@ -1,10 +1,10 @@
 import { Container, ContainerProps, Flex, Heading } from "@chakra-ui/react"
-import Link from "@components/Link"
+import { Link } from "components/Link"
 import { useState, VFC } from "react"
-import MobileToggle from "./MobileToggle"
-import NavLinks from "./NavLinks"
+import { MobileToggle } from "./MobileToggle"
+import { NavLinks } from "./NavLinks"
 
-const Navbar: VFC<ContainerProps> = props => {
+export const Navbar: VFC<ContainerProps> = props => {
   const [isOpen, setOpen] = useState(false)
   return (
     <Container maxW="container.lg" px={5} py={3} {...props}>
@@ -18,5 +18,3 @@ const Navbar: VFC<ContainerProps> = props => {
     </Container>
   )
 }
-
-export default Navbar
