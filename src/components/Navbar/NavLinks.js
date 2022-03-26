@@ -1,7 +1,6 @@
 import { Box, Stack } from "@chakra-ui/react"
-import Link from "@components/Link"
-
-import routes from "@util/routes.json"
+import Link from "components/Link"
+import routes from "util/routes.json"
 
 const NavLinks = ({ isOpen }) => {
   return (

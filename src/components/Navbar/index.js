@@ -1,5 +1,5 @@
 import { Container, Flex, Heading } from "@chakra-ui/react"
-import Link from "@components/Link"
+import Link from "components/Link"
 import { useState } from "react"
 import MobileToggle from "./MobileToggle"
 import NavLinks from "./NavLinks"
