@@ -1,5 +1,5 @@
 import { Box, Container, Stack } from "@chakra-ui/react"
-import routes from "@util/routes.json"
+import routes from "util/routes.json"
 import Link from "./Link"
 
 const Footer = () => {
