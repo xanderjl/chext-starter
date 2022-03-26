@@ -1,8 +1,9 @@
 import { Box, Container, Stack } from "@chakra-ui/react"
-import routes from "@util/routes.json"
-import Link from "./Link"
+import routes from "util/routes.json"
+import { FC } from "react"
+import { Link } from "./Link"
 
-const Footer = () => {
+export const Footer: FC = () => {
   return (
     <Container maxW="container.lg">
       <Stack>
@@ -30,5 +31,3 @@ const Footer = () => {
     </Container>
   )
 }
-
-export default Footer

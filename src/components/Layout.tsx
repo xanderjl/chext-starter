@@ -1,8 +1,9 @@
 import { Flex, Box } from "@chakra-ui/react"
-import Footer from "./Footer"
-import Navbar from "./Navbar"
+import { FC } from "react"
+import { Footer } from "./Footer"
+import { Navbar } from "./Navbar"
 
-const Layout = ({ children }) => {
+const Layout: FC = ({ children }) => {
   return (
     <Flex direction="column" minH="100vh" w="100%">
       <Navbar />

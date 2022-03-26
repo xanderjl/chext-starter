@@ -1,8 +1,14 @@
-import { Box } from "@chakra-ui/react"
+import { Box, BoxProps } from "@chakra-ui/react"
+import { VFC } from "react"
 import { AiOutlineMenu } from "react-icons/ai"
 import { MdClose } from "react-icons/md"
 
-const MobileToggle = ({ isOpen, onClick }) => {
+export interface MobileToggleProps extends BoxProps {
+  isOpen?: boolean
+  onClick?: () => void
+}
+
+export const MobileToggle: VFC<MobileToggleProps> = ({ isOpen, onClick }) => {
   return (
     <Box
       as={isOpen ? AiOutlineMenu : MdClose}
@@ -12,5 +18,3 @@ const MobileToggle = ({ isOpen, onClick }) => {
     />
   )
 }
-
-export default MobileToggle

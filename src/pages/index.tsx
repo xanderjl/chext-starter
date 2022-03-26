@@ -1,14 +1,8 @@
-import { Container, Heading } from "@chakra-ui/react"
-import Layout from "@components/Layout"
+import { PageHome } from "components/_pages/PageHome"
+import { NextPage } from "next"
 
-const Home = () => {
-  return (
-    <Layout>
-      <Container maxW="container.lg" px={5}>
-        <Heading>Hello!</Heading>
-      </Container>
-    </Layout>
-  )
+const Home: NextPage = () => {
+  return <PageHome />
 }
 
 export default Home
